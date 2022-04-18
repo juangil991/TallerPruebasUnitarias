@@ -10,4 +10,18 @@ public class BasicCalculator {
         logger.info( "Summing {} + {}", number1, number2 );
         return number1 + number2;
     }
+    public Long sub(Long number1, Long number2) {
+        logger.info( "Subtracting {} - {}", number1, number2 );
+        return number1 - number2;
+    }
+
+    public Long mult(Long number1, Long number2) {
+        logger.info( "Multiplying {} * {}", number1, number2 );
+        return number1 - number2;
+    }
+
+    public Long div(Long number1, Long number2) {
+        logger.info( "Dividing {} / {}", number1, number2 );
+        return number1 - number2;
+    }
 }
