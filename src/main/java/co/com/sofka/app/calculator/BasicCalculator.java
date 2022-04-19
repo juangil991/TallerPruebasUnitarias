@@ -17,11 +17,14 @@ public class BasicCalculator {
 
     public Long mult(Long number1, Long number2) {
         logger.info( "Multiplying {} * {}", number1, number2 );
-        return number1 - number2;
+        return number1 * number2;
     }
 
     public Long div(Long number1, Long number2) {
-        logger.info( "Dividing {} / {}", number1, number2 );
-        return number1 - number2;
+        String log = number2 != 0?
+                "Dividing " + number1 + "/" + number2:
+                "No se puede dividir por 0";
+        logger.info(log);
+        return number2!=0?number1/number2:0;
     }
 }
